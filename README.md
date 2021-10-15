@@ -1,5 +1,13 @@
 # ETH_GASBOT
-Discord bot written in python to display current gas values for Ethereum transactions. Values are pulled from the ethgasstation API.
+Discord bot written in python to display current gas values and estimated wait times for Ethereum transactions. Values are pulled from the ethgasstation API.
+
+Example
+!gas
+
+Slow: 102.0 gewi expected in: 16.5 minutes.
+Fast: 146.0 gwei expected in: 0.4 minutes.   
+Fastest: 150.0 gwei expected in: 0.4 minutes.
+Average: 111.0 gwei expected in: 1.7 minutes.
 
 
 Installation and execution
