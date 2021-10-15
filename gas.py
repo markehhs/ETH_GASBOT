@@ -16,7 +16,7 @@ except Exception as e:
 
 def main():
     client = discord.Client()
-    
+
     @client.event
     async def on_message(message):
         if message.author == client.user:
@@ -54,12 +54,12 @@ def getGasPrices():
     slowTime = float(json_object["safeLowWait"])
     averageTime = float(json_object["avgWait"])
     ##################################################### display all values
-    print("Slow: " + str(slow) + " expected in: " + str(slowTime) + " minutes.")
-    print("Fast: " + str(fast) + " expected in: " + str(fastTime) + " minutes.")
-    print("Fastest: " + str(fastest) + " expected in: " + str(fastestTime) + " minutes.")
-    print("Average: " + str(average) + " expected in: " + str(averageTime) + " minutes.")
+    print("Slow: " + str(slow) + " gewi expected in: " + str(slowTime) + " minutes.")
+    print("Fast: " + str(fast) + " gwei expected in: " + str(fastTime) + " minutes.")
+    print("Fastest: " + str(fastest) + " gwei expected in: " + str(fastestTime) + " minutes.")
+    print("Average: " + str(average) + " gwei expected in: " + str(averageTime) + " minutes.")
     ##################################################### put all values into 1 string and return the string
-    returnStr = "**Slow:** " + str(slow) + " expected in: " + str(slowTime) + " minutes.\n**Fast:** " + str(fast) + " expected in: " + str(fastTime) + " minutes.\n**Fastest:** " + str(fastest) + " expected in: " + str(fastestTime) + " minutes.\n**Average:** " + str(average) + " expected in: " + str(averageTime) + " minutes."
+    returnStr = "**Slow:** " + str(slow) + " gwei expected in: " + str(slowTime) + " minutes.\n**Fast:** " + str(fast) + " gwei expected in: " + str(fastTime) + " minutes.\n**Fastest:** " + str(fastest) + " gwei expected in: " + str(fastestTime) + " minutes.\n**Average:** " + str(average) + " gwei expected in: " + str(averageTime) + " minutes."
     return returnStr
 
 main()
