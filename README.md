@@ -5,6 +5,7 @@ Discord bot written in python to display current gas values for Ethereum transac
 Installation and execution
 1. Edit the .env file with your values. You'll need the Discord bot token and the API key for ethgasstation.
 2. DISCORD_TOKEN=YOUR_TOKEN_HERE
+   
    ETH_GAS_KEY=YOUR_KEY_HERE
 3. Run gas.py (may need to install dependencies based on your setup)
 4. In Discord type "!gas" and the bot will display the current gas prices.
